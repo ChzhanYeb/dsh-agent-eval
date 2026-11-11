@@ -1,0 +1,17 @@
+﻿- insert:
+    - id: mcp-balatro
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: balatro
+        transport: stdio
+        command: '<ABSOLUTE_PATH_TO_PROJECT_VENV_PYTHON>'
+        args:
+          - "-u"
+          - "-m"
+          - "server"
+        cwd: '<ABSOLUTE_PATH_TO_PROJECT_BRIDGE_DIRECTORY>'
+        env:
+          PYTHONIOENCODING: "utf-8"
+          PYTHONUNBUFFERED: "1"
+        failOnStartupError: true
+        startupTimeoutMs: 15000
