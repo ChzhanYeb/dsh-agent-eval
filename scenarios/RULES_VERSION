@@ -1,0 +1,8 @@
+rules_version: 1.0-subset
+spec_revision: W2-v2.1-2026-11-12
+covered: [deck52, initial_hand8, play1_5, hand_types9, jokers8_synthetic_fixtures, joker_slots3, blinds3, shop_3choose1, hands4, discards2]
+excluded: [money, interest, booster, tarot, planet, boss_effect, deck_mod, skip_blind, enhancements, editions, rarity, probabilistic_jokers, nested_synergies, vanilla_hand_base_chips, vanilla_hand_base_mult, vanilla_scoring_hand_exclusion]
+fidelity: score-level only; custom subset formula; RNG NOT replicated
+fidelity_status: NOT_VERIFIED
+verified_against: pending manual capture; 20 scenarios required + 5 calculator checks required
+notes: ["Joker values in bench/jokers.py are synthetic fixtures, not named vanilla Jokers.", "Do not claim 20/20 until docs/engine-fidelity.md contains measured results.", "The supplied 7h7d -> 68 example conflicts with both the custom formula and vanilla level-1 Pair scoring."]
